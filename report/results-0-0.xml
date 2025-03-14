@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="SauceDemo Login Tests" timestamp="2025-03-14T09:04:13" time="1.305" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="SauceDemo Login Tests"/>
+      <property name="capabilities" value="chrome.134_0_6998_89.mac"/>
+      <property name="file" value="file://./src/specs/loginTest.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_89.mac.SauceDemo_Login_Tests" name="UC 1 Test login form with empty credentials" time="0.741">
+      <system-out><![CDATA[
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.05499CBD9C33FF88CAB760B0DAA598CF.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.05499CBD9C33FF88CAB760B0DAA598CF.e.4/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.05499CBD9C33FF88CAB760B0DAA598CF.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.05499CBD9C33FF88CAB760B0DAA598CF.e.5/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.05499CBD9C33FF88CAB760B0DAA598CF.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.05499CBD9C33FF88CAB760B0DAA598CF.e.9/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_89.mac.SauceDemo_Login_Tests" name="UC 2 Test login form with missing password" time="0.294">
+      <system-out><![CDATA[
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.158E49313126FF1F1AF079A467797ECE.e.18/clear - {}
+RESULT: {}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.158E49313126FF1F1AF079A467797ECE.e.18/value - {"text":"standard_user"}
+RESULT: {"text":"standard_user"}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.158E49313126FF1F1AF079A467797ECE.e.19/clear - {}
+RESULT: {}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.158E49313126FF1F1AF079A467797ECE.e.19/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.158E49313126FF1F1AF079A467797ECE.e.20/click - {}
+RESULT: {}
+COMMAND: GET /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.158E49313126FF1F1AF079A467797ECE.e.21/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_89.mac.SauceDemo_Login_Tests" name="UC 3 Test login form with valid credentials" time="0.27">
+      <system-out><![CDATA[
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.6D9A4013E3995BB7F83B3FF02F5FDB81.e.32/clear - {}
+RESULT: {}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.6D9A4013E3995BB7F83B3FF02F5FDB81.e.32/value - {"text":"standard_user"}
+RESULT: {"text":"standard_user"}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.6D9A4013E3995BB7F83B3FF02F5FDB81.e.33/clear - {}
+RESULT: {}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.6D9A4013E3995BB7F83B3FF02F5FDB81.e.33/value - {"text":"secret_sauce"}
+RESULT: {"text":"secret_sauce"}
+COMMAND: POST /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.6D9A4013E3995BB7F83B3FF02F5FDB81.e.34/click - {}
+RESULT: {}
+COMMAND: GET /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.6D9A4013E3995BB7F83B3FF02F5FDB81.e.58/css/display - {}
+RESULT: {}
+COMMAND: GET /session/86ea4d2ee0fd1553b3388d2b2e3a6f63/element/f.5DF7EF38B6D5328401A1D21F920ED7C0.d.6D9A4013E3995BB7F83B3FF02F5FDB81.e.58/text - {}
+RESULT: {}
+COMMAND: DELETE /session/86ea4d2ee0fd1553b3388d2b2e3a6f63 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
