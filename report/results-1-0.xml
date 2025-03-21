@@ -1,61 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="3" failures="0" errors="0" skipped="0">
-  <testsuite name="SauceDemo Login Tests" timestamp="2025-03-14T09:04:18" time="1.911" tests="3" failures="0" errors="0" skipped="0">
+<testsuites tests="4" failures="0" errors="0" skipped="0">
+  <testsuite name="SauceDemo Login Tests" timestamp="2025-03-21T11:51:20" time="4.601" tests="4" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="SauceDemo Login Tests"/>
       <property name="capabilities" value="firefox.135_0.mac"/>
       <property name="file" value="file://./src/specs/loginTest.js"/>
     </properties>
-    <testcase classname="firefox.135_0.mac.SauceDemo_Login_Tests" name="UC 1 Test login form with empty credentials" time="1.166">
+    <testcase classname="firefox.135_0.mac.SauceDemo_Login_Tests" name="Login with username and password" time="2.221">
       <system-out><![CDATA[
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/8b3ce46a-a97b-4fb0-8009-b66eb2d765b5/clear - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/a23aa9a7-1fdc-4aad-bc01-93c74cd5bc28/css/display - {}
 RESULT: {}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/8b3ce46a-a97b-4fb0-8009-b66eb2d765b5/value - {"text":""}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/a23aa9a7-1fdc-4aad-bc01-93c74cd5bc28/css/display - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/a23aa9a7-1fdc-4aad-bc01-93c74cd5bc28/clear - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/a23aa9a7-1fdc-4aad-bc01-93c74cd5bc28/value - {"text":""}
 RESULT: {"text":""}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/455ee515-2fd3-4cd4-9348-8fa62294e8a1/clear - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/d2071d36-9e04-4f3a-b27f-53b735ad4250/css/display - {}
 RESULT: {}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/455ee515-2fd3-4cd4-9348-8fa62294e8a1/value - {"text":""}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/d2071d36-9e04-4f3a-b27f-53b735ad4250/clear - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/d2071d36-9e04-4f3a-b27f-53b735ad4250/value - {"text":""}
 RESULT: {"text":""}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/b361f4d8-be4d-4776-9b56-82793d50d238/click - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/4f0e5b9c-a405-4e66-80bc-7b0e931f00f5/css/display - {}
 RESULT: {}
-COMMAND: GET /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/d6afff90-60c4-4945-bad2-494de16e45f7/text - {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/4f0e5b9c-a405-4e66-80bc-7b0e931f00f5/click - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/fa802ff5-1622-428e-8109-289e0228054c/css/display - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/fa802ff5-1622-428e-8109-289e0228054c/css/display - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/fa802ff5-1622-428e-8109-289e0228054c/text - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.135_0.mac.SauceDemo_Login_Tests" name="UC 2 Test login form with missing password" time="0.366">
+    <testcase classname="firefox.135_0.mac.SauceDemo_Login_Tests" name="Login with username standard user and password" time="0.568">
       <system-out><![CDATA[
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/5bf07dc5-c3ba-4dbd-9542-6a6bef43ee79/clear - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/8b278c6c-d114-4805-89b5-d54ee8a4ead7/css/display - {}
 RESULT: {}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/5bf07dc5-c3ba-4dbd-9542-6a6bef43ee79/value - {"text":"standard_user"}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/8b278c6c-d114-4805-89b5-d54ee8a4ead7/css/display - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/8b278c6c-d114-4805-89b5-d54ee8a4ead7/clear - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/8b278c6c-d114-4805-89b5-d54ee8a4ead7/value - {"text":"standard_user"}
 RESULT: {"text":"standard_user"}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/fb1d4e6b-406a-498b-8cdb-72e37b4a6b61/clear - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/6a1e528c-157c-427d-8122-81c6ebd1b984/css/display - {}
 RESULT: {}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/fb1d4e6b-406a-498b-8cdb-72e37b4a6b61/value - {"text":""}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/6a1e528c-157c-427d-8122-81c6ebd1b984/clear - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/6a1e528c-157c-427d-8122-81c6ebd1b984/value - {"text":""}
 RESULT: {"text":""}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/c84cf299-c4e9-48e6-b1a7-d9606ce1fb3f/click - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/e28ddce2-a4f1-4aa1-99ec-ca9fb6ccd82d/css/display - {}
 RESULT: {}
-COMMAND: GET /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/8c29ca19-fec4-423e-8022-caab9247e97a/text - {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/e28ddce2-a4f1-4aa1-99ec-ca9fb6ccd82d/click - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/b8d6f790-0a28-432c-a22b-17a00a920945/css/display - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/b8d6f790-0a28-432c-a22b-17a00a920945/css/display - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/b8d6f790-0a28-432c-a22b-17a00a920945/text - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.135_0.mac.SauceDemo_Login_Tests" name="UC 3 Test login form with valid credentials" time="0.379">
+    <testcase classname="firefox.135_0.mac.SauceDemo_Login_Tests" name="Login with username locked out user and password secret sauce" time="0.531">
       <system-out><![CDATA[
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/044eb5df-3fb2-4270-b1c2-f6353bfa81b7/clear - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/1b85ab7a-b4da-4593-b410-5fb6ed3b4170/css/display - {}
 RESULT: {}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/044eb5df-3fb2-4270-b1c2-f6353bfa81b7/value - {"text":"standard_user"}
-RESULT: {"text":"standard_user"}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/5fc9b107-725e-4316-ad5b-90e887a9114c/clear - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/1b85ab7a-b4da-4593-b410-5fb6ed3b4170/css/display - {}
 RESULT: {}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/5fc9b107-725e-4316-ad5b-90e887a9114c/value - {"text":"secret_sauce"}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/1b85ab7a-b4da-4593-b410-5fb6ed3b4170/clear - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/1b85ab7a-b4da-4593-b410-5fb6ed3b4170/value - {"text":"locked_out_user"}
+RESULT: {"text":"locked_out_user"}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/2ec163cb-df81-48ca-bb59-c459e593a3da/css/display - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/2ec163cb-df81-48ca-bb59-c459e593a3da/clear - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/2ec163cb-df81-48ca-bb59-c459e593a3da/value - {"text":"secret_sauce"}
 RESULT: {"text":"secret_sauce"}
-COMMAND: POST /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/51354acd-97bb-4c45-aed8-f9608ef68c5c/click - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/fe0428fa-bf79-4df2-ac7e-d6c7becaf186/css/display - {}
 RESULT: {}
-COMMAND: GET /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/5f93aa7e-de7f-449c-9f2f-28c9575208ac/css/display - {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/fe0428fa-bf79-4df2-ac7e-d6c7becaf186/click - {}
 RESULT: {}
-COMMAND: GET /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694/element/5f93aa7e-de7f-449c-9f2f-28c9575208ac/text - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/e7d9286a-bb02-4f51-bdbf-222d56b8f757/css/display - {}
 RESULT: {}
-COMMAND: DELETE /session/fc860b57-7d6b-4db6-b34f-fe99e4fe7694 - {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/e7d9286a-bb02-4f51-bdbf-222d56b8f757/css/display - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/e7d9286a-bb02-4f51-bdbf-222d56b8f757/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.135_0.mac.SauceDemo_Login_Tests" name="Login with username standard user and password secret sauce" time="1.276">
+      <system-out><![CDATA[
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/f25f60fd-b55b-498a-a4ff-8b525395dc84/css/display - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/f25f60fd-b55b-498a-a4ff-8b525395dc84/css/display - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/f25f60fd-b55b-498a-a4ff-8b525395dc84/clear - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/f25f60fd-b55b-498a-a4ff-8b525395dc84/value - {"text":"standard_user"}
+RESULT: {"text":"standard_user"}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/c1e18117-95e6-4091-9c82-88fc3498f5ed/css/display - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/c1e18117-95e6-4091-9c82-88fc3498f5ed/clear - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/c1e18117-95e6-4091-9c82-88fc3498f5ed/value - {"text":"secret_sauce"}
+RESULT: {"text":"secret_sauce"}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/eef3e4b3-dfa5-4199-b2e0-15e61d8731c9/css/display - {}
+RESULT: {}
+COMMAND: POST /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/element/eef3e4b3-dfa5-4199-b2e0-15e61d8731c9/click - {}
+RESULT: {}
+COMMAND: GET /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083/title - {}
+RESULT: {}
+COMMAND: DELETE /session/2ab2efe4-1b51-4021-9ac5-1b6e94da5083 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

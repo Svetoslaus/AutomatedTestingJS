@@ -1,0 +1,25 @@
+{
+    "loginTests": [
+      {
+        "username": "",
+        "password": "",
+        "expectedMessage": "Username is required"
+      },
+      {
+        "username": "standard_user",
+        "password": "",
+        "expectedMessage": "Password is required"
+      },
+      {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "expectedMessage": "Epic sadface: Sorry, this user has been locked out."
+      },
+      {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expectedMessage": "Swag Labs"
+      }
+    ]
+  }
+  

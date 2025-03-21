@@ -1,37 +1,34 @@
 import { expect } from 'chai';
+import LoginPage from '../pages/LoginPage';
+import log from '../utils/logger'; 
 
+// Load test data dynamically
+const testData = await import('../data/testData.json', { assert: { type: "json" } }).then(m => m.default);
 
 describe('SauceDemo Login Tests', () => {
     beforeEach(async () => {
-        await browser.url('https://www.saucedemo.com/');
+        await LoginPage.open();
     });
 
-    it('UC-1: Test login form with empty credentials', async () => {
-        await $('#user-name').setValue(''); 
-        await $('#password').setValue(''); 
-        await $('.btn_action').click(); 
+    // test cases dynamically
+    testData.loginTests.forEach(({ username, password, expectedMessage }) => {
+        it(`Login with username: "${username}" and password: "${password}"`, async () => {
+            console.log(`Running test with: username=${username}, password=${password}`);
 
-        const errorMsg = await $('.error-message-container').getText();
-        expect(errorMsg).to.include('Username is required');
-    });
+            await LoginPage.login(username, password);
 
-    it('UC-2: Test login form with missing password', async () => {
-        await $('#user-name').setValue('standard_user'); 
-        await $('#password').setValue(''); 
-        await $('.btn_action').click(); 
-
-        const errorMsg = await $('.error-message-container').getText();
-        expect(errorMsg).to.include('Password is required');
-    });
-
-    it('UC-3: Test login form with valid credentials', async () => {
-        await $('#user-name').setValue('standard_user');
-        await $('#password').setValue('secret_sauce');
-        await $('.btn_action').click();
-
-        await $('span.title').waitForDisplayed();
-
-        const pageHeader = await $('span.title').getText();
-        expect(pageHeader).to.equal('Products');
+            if (expectedMessage === "Swag Labs") {
+                // successful login
+                const title = await browser.getTitle();
+                expect(title).to.equal(expectedMessage);
+            } else {
+                // error message for invalid login
+                await LoginPage.errorMessage.waitForDisplayed({ timeout: 5000 });
+                const errorMsg = await LoginPage.getErrorMessage();
+                
+                // flexible matching
+                expect(errorMsg).to.include(expectedMessage);
+            }
+        });
     });
 });
